@@ -1,0 +1,49 @@
+
+.card.shadow {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-title {
+    background-color: #f8f9fa;
+    border-radius: 15px 15px 0 0;
+  }
+  
+  .card-title h2 {
+    margin: 0;
+  }
+  
+  .card-body {
+    padding: 2rem;
+  }
+  
+  .form-label {
+    font-weight: bold;
+  }
+  
+  .form-control {
+    border-radius: 10px;
+  }
+  
+  .form-check-input {
+    margin-top: 5px;
+  }
+  
+  .d-grid {
+    margin-top: 20px;
+  }
+  .btn-primary {
+    background-color: #000000;
+    border-color: #000000;
+    color: #ffffff;
+  }
+  
+  .btn-primary:hover {
+    background-color: #333333;
+    border-color: #333333;
+  }
+  .form-check-input {
+    margin-right: 10px; /* Adjust the value to increase or decrease the space */
+  }
+    

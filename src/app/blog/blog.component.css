@@ -1,0 +1,41 @@
+
+.img-custom {
+    height: 400px; /* Adjust as needed */
+    object-fit: cover;
+}
+
+.card-custom {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-custom:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.custom-box {
+    background: rgba(248, 245, 245, 0.5);
+    color: black;
+    position: absolute;
+    /* bottom: -100%; */
+    bottom: 0; /* Move the custom box up on hover */
+
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    transition: bottom 0.3s ease; /* Add transition for smooth animation */
+}
+
+.card-custom:hover .custom-box {
+    bottom: 0; /* Move the custom box up on hover */
+}
+
+
+.custom-box a {
+    color: orange; /* Set the initial color of the link */
+    transition: color 0.3s ease; /* Add transition for color change */
+}
+
+.custom-box a:hover {
+    color: black; /* Change the color of the link on hover */
+}

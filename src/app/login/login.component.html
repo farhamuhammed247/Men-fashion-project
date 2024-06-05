@@ -1,0 +1,46 @@
+
+
+<div class="container">
+    <div class="row justify-content-center mt-5">
+      <div class="col-lg-4 col-md-6 col-sm-6">
+        <div class="card shadow">
+          <div class="card-title text-center border-bottom">
+            <h2 class="p-3">Login</h2>
+          </div>
+          <div class="card-body">
+            <form [formGroup]="form">
+              <div class="mb-4">
+                <label for="username" class="form-label">Username/Email</label>
+                <input type="text" class="form-control" id="username" placeholder="Enter your email" formControlName="email" />
+<br>
+                <div *ngIf="f['email'].touched && f['email'].invalid" style="color: red;" class="msgerorr">
+                    <div *ngIf="f['email'].errors && f['email'].errors['required']">Email is required</div>
+                    <div *ngIf="f['email'].errors && f['email'].errors['email']">invalid Email</div>
+                    <br>
+                  </div>
+              </div>
+              <div class="mb-4">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Enter your password" formControlName="password" />
+<br>
+                <div *ngIf="f['password'].touched && f['password'].invalid" style="color: red;" class="msgerorr">
+                    <div *ngIf="f['password'].errors && f['password'].errors['required']">Password is required</div>
+                    <div *ngIf="f['password'].errors && f['password'].errors['minlength']">Password must be at least 6 characters</div>
+                    <br>
+                  </div>
+              </div>
+              <div class="mb-4">
+                <input type="checkbox" class="form-check-input" id="remember" />
+                <label for="remember" class="form-label">Remember Me</label>
+              </div>
+              <div class="d-grid">
+                <button type="submit" class="btn btn-dark" (click)="test()">Login</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>

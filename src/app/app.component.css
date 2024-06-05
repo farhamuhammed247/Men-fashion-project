@@ -1,0 +1,35 @@
+
+.navbar-text {
+    color: white !important;
+  }
+
+  .nav-link {
+      color: black !important;
+      position: relative;
+    }
+    .nav-link:hover {
+      color: black !important;
+    }
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      display: block;
+      margin-top: 5px;
+      right: 0;
+      background: orange;
+      transition: width .3s ease;
+      -webkit-transition: width .3s ease;
+    }
+    .nav-link:hover::after {
+      width: 100%;
+      left: 0;
+      background: orange;
+    }
+    .text-white {
+        text-decoration: none;
+      }
+
+
+      

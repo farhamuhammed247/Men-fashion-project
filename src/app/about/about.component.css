@@ -1,0 +1,84 @@
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
+.centered-image {
+    max-width: 60%; 
+    height: auto; 
+    border: 2px solid #000; 
+ 
+}
+
+.text {
+    color: #333;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.text h2 {
+    margin-bottom: 10px;
+}
+
+.text p {
+    margin-bottom: 20px;
+}
+.second{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Adjust the height as needed */
+}
+
+.second img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #000; /* Optional: Add a border to the image */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+.text1 {
+    flex: 2;
+    background-color: #e0e0e0; /* Gray background */
+    padding: 20px; /* Padding for some spacing inside the background */
+    border-radius: 8px; /* Rounded corners */
+    margin-top: 190px;
+}
+
+.text2 {
+    font-size: 1.2rem; /* Increase the font size */
+    line-height: 1.5; /* Adjust the line height */
+    color: #333; /* Change the text color */
+    text-align: center; /* Center the text */
+}
+
+.img-custom {
+    height: 500px; /* Adjust as needed */
+    object-fit: cover;
+}
+
+.card-custom {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-custom:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-body h3,
+.card-body p {
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default paddings */
+}
+
+.card-body h3 {
+    font-size: 1.25rem; /* Adjust font size as needed */
+    margin-bottom: 0.5rem; /* Add space between title and job */
+}
+
+.card-body p {
+    font-size: 1rem; /* Adjust font size as needed */
+}

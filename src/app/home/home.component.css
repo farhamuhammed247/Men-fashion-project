@@ -1,0 +1,56 @@
+
+
+      .custom-carousel {
+        height: 600px !important; /* Adjust this value as needed */
+      }
+      .custom-carousel .carousel-inner {
+        height: 100%;
+      }
+      .custom-carousel img {
+        height: 100%;
+        object-fit: cover; /* Ensure images cover the carousel area */
+      }
+      .carousel-caption {
+        top: 45%;
+        left: 10%;
+        transform: translateY(-50%);
+        color: #000; /* Ensure text has enough contrast */
+        /* background-color: rgba(255, 255, 255, 0.7); Optional: Add background color to make text more readable */
+        padding: 20px;
+        border-radius: 10px;
+        text-align: left; /* Left-align text */
+      }
+      .carousel-caption h3, .carousel-caption p {
+        color: #000;
+      }
+
+      .collection-img {
+        width: 100%;
+        height: auto;
+        max-height: 300px; /* Adjust this value as needed */
+        object-fit: cover;
+      }
+      .collection-item {
+        margin-bottom: 20px;
+      }
+      .nav-link::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        display: block;
+        margin-top: 5px;
+        right: 0;
+        background: orange;
+        transition: width 0.3s ease;
+        -webkit-transition: width 0.3s ease;
+      }
+      .nav-link:hover::after {
+        width: 15%;
+        left: 0;
+        background: orange;
+      }
+      .nav-link:hover {
+        color: orange;
+      }
+    

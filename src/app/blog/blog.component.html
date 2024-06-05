@@ -1,0 +1,28 @@
+<div style="text-align: center; position: relative;">
+    <img src="assets/keagan-henman-Won79_9oUEk-unsplash.jpg" alt="" width="100%" height="300" style="opacity: 0.8;">
+    <p style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 40px; color: white; font-weight: bold;">
+      {{ 'Our Blog' | uppercase }}
+    </p>
+</div>
+
+  <br>
+  <br>
+
+  <div class="container">
+    <div class="row">
+        <div *ngFor="let item of images; let i = index" class="col-md-4 mb-4">
+            <div class="card card-custom">
+                <img [src]="item.image" class="card-img-top img-fluid img-custom" alt="...">
+                <div class="custom-box">
+                    {{ i | date:'MM/dd/yyyy' }}<br>
+
+                    {{item.title}}<br>
+                    <a href="#">{{ 'Read More' | uppercase }}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
+
+<br>
+<br>
